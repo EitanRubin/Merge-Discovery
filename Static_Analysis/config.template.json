@@ -1,0 +1,66 @@
+{
+  "name": "HTTP Call Analyzer Configuration",
+  "description": "Configuration template for analyzing HTTP calls in any codebase",
+  "version": "1.0.0",
+  
+  "analysis": {
+    "includeExtensions": [
+      ".js", ".jsx", ".ts", ".tsx", ".vue", ".mjs", ".cjs",
+      ".php", ".py", ".rb", ".java", ".cs", ".cpp", ".c", ".h", 
+      ".go", ".rs", ".kt", ".swift", ".dart", ".scala", 
+      ".html", ".xml", ".json", ".yml", ".yaml"
+    ],
+    "excludePatterns": [
+      "node_modules", "dist", "build", ".git", "coverage", 
+      "__pycache__", "vendor", "target", "bin", "obj", 
+      ".next", ".nuxt", "tmp", "temp", ".cache"
+    ],
+    "defaultDirectory": "./",
+    "deep": true,
+    "includeSecurityAnalysis": true,
+    "includePerformanceAnalysis": true,
+    "trackDynamicUrls": true,
+    "analyzeHeaders": true
+  },
+  
+  "httpPatterns": {
+    "customPatterns": {
+      "custom_library": ["myLibrary.get", "myLibrary.post"],
+      "custom_framework": ["framework.request", "framework.call"]
+    },
+    "additionalGenericPatterns": [
+      "httpRequest", "webCall", "restRequest", "apiRequest"
+    ]
+  },
+  
+  "urlPatterns": {
+    "customDomains": [],
+    "allowedProtocols": ["http", "https", "ws", "wss"],
+    "apiPathPatterns": ["/api/", "/v1/", "/v2/", "/graphql", "/rest/"]
+  },
+  
+  "security": {
+    "requireHttps": false,
+    "sensitiveParams": ["password", "token", "key", "secret", "credential", "auth"],
+    "authHeaders": ["authorization", "x-api-key", "x-auth-token", "bearer"]
+  },
+  
+  "performance": {
+    "maxCallsPerFile": 50,
+    "warnOnLoopCalls": true,
+    "suggestCaching": true
+  },
+  
+  "output": {
+    "defaultFormat": "json",
+    "verbose": false,
+    "includeContext": true,
+    "includeStats": true
+  },
+  
+  "projectType": {
+    "type": "generic",
+    "framework": "auto-detect",
+    "language": "auto-detect"
+  }
+}
