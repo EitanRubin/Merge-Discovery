@@ -1,0 +1,27 @@
+{
+  "name": "merge-discovery",
+  "version": "1.0.0",
+  "description": "API Discovery Pipeline - Combines runtime interception (Noizz2025) with static analysis",
+  "type": "module",
+  "main": "merge_api_calls.js",
+  "scripts": {
+    "crawl": "cd Noizz2025 && python api_server.py",
+    "analyze": "cd Static_Analysis && node main.js ../Noizz2025/mapping_output/extracted_js --deep --security --performance",
+    "convert:noizz": "cd Noizz2025 && python standardized_output.py",
+    "convert:static": "node Static_Analysis/src/convert-to-standard.js",
+    "merge": "node merge_api_calls.js",
+    "full-pipeline": "node run_pipeline.js",
+    "pipeline:skip-crawl": "node run_pipeline.js --skip-crawl",
+    "pipeline:merge-only": "node run_pipeline.js --merge-only"
+  },
+  "keywords": [
+    "api-discovery",
+    "static-analysis",
+    "http-analyzer",
+    "api-mapping"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
+
