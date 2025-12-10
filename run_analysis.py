@@ -134,7 +134,7 @@ def run_noizz2025(config_file: str = None, start_url: str = None):
         response = httpx.post(
             "http://localhost:8000/map",
             json={"config": config},
-            timeout=600  # 10 minutes timeout for mapping
+            timeout=300  # 5 minutes timeout for mapping
         )
         
         if response.status_code == 200:
