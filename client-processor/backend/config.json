@@ -1,0 +1,7 @@
+{
+  "port": 3001,
+  "targetApiUrl": "http://localhost:9999/api/receive-results",
+  "requestTimeout": 30000,
+  "verboseLogging": true
+}
+

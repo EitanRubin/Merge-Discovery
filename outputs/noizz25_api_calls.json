@@ -10,7 +10,25 @@
   },
   {
     "method": "GET",
+    "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/time",
+    "file": null,
+    "line": null,
+    "column": null,
+    "source": "noizz25",
+    "authentication": "anonymous"
+  },
+  {
+    "method": "GET",
     "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/weather",
+    "file": null,
+    "line": null,
+    "column": null,
+    "source": "noizz25",
+    "authentication": "anonymous"
+  },
+  {
+    "method": "GET",
+    "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/status",
     "file": null,
     "line": null,
     "column": null,
@@ -28,24 +46,6 @@
   },
   {
     "method": "GET",
-    "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/stats",
-    "file": null,
-    "line": null,
-    "column": null,
-    "source": "noizz25",
-    "authentication": "anonymous"
-  },
-  {
-    "method": "GET",
-    "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/time",
-    "file": null,
-    "line": null,
-    "column": null,
-    "source": "noizz25",
-    "authentication": "anonymous"
-  },
-  {
-    "method": "GET",
     "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/reviews",
     "file": null,
     "line": null,
@@ -55,7 +55,7 @@
   },
   {
     "method": "GET",
-    "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/status",
+    "url": "https://juaogodstdjfllmdepop.supabase.co/functions/v1/news-api/stats",
     "file": null,
     "line": null,
     "column": null,
